@@ -1,6 +1,7 @@
+function addToPage(){
 fetch('https://2ubiyjczwh.execute-api.eu-west-2.amazonaws.com/wall', {
   method: 'POST',
-  body: JSON.stringify({message: fname})
+  body: JSON.stringify({message: prompt("Add Here:")})
 }).then(function (response) {
   if (response.status == 200) {
     console.log("Ok!")
@@ -14,4 +15,5 @@ if (localStorage.getItem('test') == "key") {
 } else {
   localStorage.setItem('test', 'key')
 
+}
 }
