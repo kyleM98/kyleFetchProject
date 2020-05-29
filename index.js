@@ -1,4 +1,4 @@
-function addToWall() {
+function addToPage() {
     let theInput = document.getElementById("fname").value
     fetch('https://2ubiyjczwh.execute-api.eu-west-2.amazonaws.com/wall', {
       method: 'POST',
