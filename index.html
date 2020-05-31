@@ -14,11 +14,16 @@
 </head>
 <body>
     <script src="index.js"></script>
+    <div class="jumbotron">
+        <h1 class="display-4">Class Fetch Task</h1>
+        
+        <hr class="my-4">
+      </div>
     <form onsubmit="addToPage()">
-        <label for="fname">First name:</label><br>
+        <label for="fname">Add to wall:</label><br>
         <input type="text" id="fname" name="fname"><br>
         
-        <input type="submit" value="Submit">
+        <input type="submit" value="Click To Add">
       </form> 
     <script>fetch('https://2ubiyjczwh.execute-api.eu-west-2.amazonaws.com/wall').then(response => response.json()).then(data => console.log(data))</script>  
       
